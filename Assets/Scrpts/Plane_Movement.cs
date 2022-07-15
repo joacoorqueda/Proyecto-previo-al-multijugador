@@ -6,11 +6,12 @@ public class Plane_Movement : MonoBehaviour
 {
     public float MovementSpeed;
     public float RotationSpeed;
+    int influence = 1;
     Rigidbody RB;
     bool Jump = false;
     public float JF;
     bool FD = false;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -20,16 +21,20 @@ public class Plane_Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(0, 0, MovementSpeed);
 
-        if (Input.GetKey(KeyCode.Mouse1))
-        {  
-         transform.Translate(0, 0, -MovementSpeed);
+        //if(Input.GetAxisRaw("Horizontal") != 0)
+        //{
+        //    influence = (int)Input.GetAxisRaw("Horizontal");
+        //}
+
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            influence *= -1;
         }
+        transform.Translate(0, 0, MovementSpeed * influence);
 
-            
-        
-       
+
+
         Jump = Input.GetButtonDown("Jump");
 
         if (Jump && FD)
