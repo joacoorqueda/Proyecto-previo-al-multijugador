@@ -20,17 +20,16 @@ public class Plane_Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
-        {
-            transform.Translate(0, 0, -MovementSpeed);
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            transform.Translate(0, 0, MovementSpeed);
+        transform.Translate(0, 0, MovementSpeed);
+
+        if (Input.GetKey(KeyCode.Mouse1))
+        {  
+         transform.Translate(0, 0, -MovementSpeed);
         }
 
-
-
+            
+        
+       
         Jump = Input.GetButtonDown("Jump");
 
         if (Jump && FD)
