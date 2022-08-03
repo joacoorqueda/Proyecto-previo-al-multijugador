@@ -11,7 +11,7 @@ public class Plane_Movement : MonoBehaviour
     bool Jump = false;
     public float JF;
     bool FD = false;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,54 +27,32 @@ public class Plane_Movement : MonoBehaviour
         //    influence = (int)Input.GetAxisRaw("Horizontal");
         //}
 
+        //if (Input.GetKeyDown(KeyCode.Mouse1))
+        //{
+        //    influence *= -1;
+
+        //}
+       
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
-            influence *= -1;
+            transform.Rotate(0, 180, 0);
         }
+
+
+
         transform.Translate(0, 0, MovementSpeed * influence);
-
-
 
         Jump = Input.GetButtonDown("Jump");
 
-        if (Jump && FD)
+        if (Jump /*&& FD*/)
         {
             RB.AddForce(new Vector3(0, JF, 0), ForceMode.Impulse);
         }
 
         Vector3 Floor = transform.TransformDirection(Vector3.down);
 
-        if (Physics.Raycast(transform.position, Floor, 1.03f))
-        {
-            FD = true;
-        }
-
-        else
-        {
-            FD = false;
-        }
-
     }
-
-    void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.name == "DeathFloor")
-        {
-            Destroy(gameObject);
-        }
-
-        else if (other.gameObject.name == "DeathFloor (1)")
-        {
-            Destroy(gameObject);
-        }
-        else if (other.gameObject.name == "DeathFloor (2)")
-        {
-            Destroy(gameObject);
-        }
-
-    }
-
-
 
 }
+
 
