@@ -32,19 +32,15 @@ public class Plane_Movement : MonoBehaviour
         //    influence *= -1;
 
         //}
-       
+        transform.Translate(0, 0, MovementSpeed);
+
+
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             transform.Rotate(0, 180, 0);
         }
-
-
-
-        transform.Translate(0, 0, MovementSpeed * influence);
-
-        Jump = Input.GetButtonDown("Jump");
-
-        if (Jump /*&& FD*/)
+        
+        if (Input.GetKey(KeyCode.Space))
         {
             RB.AddForce(new Vector3(0, JF, 0), ForceMode.Impulse);
         }
