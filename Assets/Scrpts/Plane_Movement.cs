@@ -32,7 +32,7 @@ public class Plane_Movement : MonoBehaviour
         //    influence *= -1;
 
         //}
-        //transform.Translate(0, 0, MovementSpeed);
+        transform.Translate(0, 0, MovementSpeed);
 
 
         if (Input.GetKeyDown(KeyCode.Mouse1))

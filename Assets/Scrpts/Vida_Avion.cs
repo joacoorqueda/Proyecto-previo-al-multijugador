@@ -11,7 +11,7 @@ public class Vida_Avion : MonoBehaviour
         if (VidaAvionn <= 0)
         {
             Destroy(gameObject);
-            Debug.Log("Ralladura de Palta");
+            
         }
 
     }

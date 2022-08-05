@@ -9,11 +9,13 @@ public class Bullet_Damage : MonoBehaviour
 
 
 
-    private void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision other)
     {
-        if (other.tag == "Player")
+        if (other.gameObject.name == "Player")
         {
             Player.GetComponent<Vida_Avion>().VidaAvionn -= Damage;
+            Destroy(gameObject);
+
         }
 
 
