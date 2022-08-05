@@ -181,6 +181,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &289756086
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 289756087}
+  m_Layer: 0
+  m_Name: "Empty Ca\xF1on 2"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &289756087
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289756086}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: -0.017652074, y: -0.009659759, z: 0.48597386}
+  m_LocalScale: {x: 4.770846, y: 14.35885, z: 1.0343663}
+  m_Children: []
+  m_Father: {fileID: 388222255}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &388222254
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,7 +224,7 @@ GameObject:
   - component: {fileID: 388222257}
   - component: {fileID: 388222256}
   m_Layer: 0
-  m_Name: 'faro 2 '
+  m_Name: "Ca\xF1on 2 "
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -208,9 +238,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 388222254}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.688, y: 2.95, z: 0.419}
-  m_LocalScale: {x: 0.33695, y: 2.527998, z: 0.114574455}
-  m_Children: []
+  m_LocalPosition: {x: 0.203, y: 3.91, z: 0.244}
+  m_LocalScale: {x: 0.20960644, y: 0.599961, z: 0.3101523}
+  m_Children:
+  - {fileID: 289756087}
   m_Father: {fileID: 1187219121}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -223,7 +254,7 @@ SphereCollider:
   m_GameObject: {fileID: 388222254}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -347,13 +378,43 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0.21057463, y: 0.6157865, z: -0.24566785, w: 0.7184098}
-  m_LocalPosition: {x: -9.76, y: 9.2, z: -1.6100001}
+  m_LocalRotation: {x: 0.0026384979, y: 0.77778393, z: 0.022042973, w: 0.6281395}
+  m_LocalPosition: {x: -9.76, y: 0.85, z: -1.6100001}
   m_LocalScale: {x: 1.2345473, y: 2.5774264, z: 2.738188}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 37.237003, y: 78.925, z: -6.755}
+  m_LocalEulerAnglesHint: {x: -1.7750001, y: 102.123, z: 1.8230001}
+--- !u!1 &559328368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 559328369}
+  m_Layer: 0
+  m_Name: "Empty Ca\xF1on 1 "
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &559328369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559328368}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: 0.006211739, y: 0.11921223, z: 0.4698489}
+  m_LocalScale: {x: 6.2116337, y: 13.839875, z: 1.1692643}
+  m_Children: []
+  m_Father: {fileID: 1947241753}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1187219115
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,7 +554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd7e049ab8d27de42be18ab03b036a51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VidaAvionn: 125
+  VidaAvionn: 100
 --- !u!1 &1244482599
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,7 +587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44bf8a5551db6154d8bcb4ea2b357bd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 125
+  Damage: 35
   Player: {fileID: 1187219115}
 --- !u!136 &1244482601
 CapsuleCollider:
@@ -705,7 +766,7 @@ GameObject:
   - component: {fileID: 1947241755}
   - component: {fileID: 1947241754}
   m_Layer: 0
-  m_Name: 'faro 1 '
+  m_Name: "Ca\xF1on 1 "
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -719,9 +780,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947241752}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.66, y: 4.28, z: 0.395684}
-  m_LocalScale: {x: 0.39702, y: 3.1053586, z: 0.15878864}
-  m_Children: []
+  m_LocalPosition: {x: -0.354, y: 3.83, z: 0.232}
+  m_LocalScale: {x: 0.16098824, y: 0.62245864, z: 0.27437}
+  m_Children:
+  - {fileID: 559328369}
   m_Father: {fileID: 1187219121}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -734,7 +796,7 @@ SphereCollider:
   m_GameObject: {fileID: 1947241752}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
