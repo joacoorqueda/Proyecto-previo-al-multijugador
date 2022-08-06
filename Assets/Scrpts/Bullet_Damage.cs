@@ -5,15 +5,15 @@ using UnityEngine;
 public class Bullet_Damage : MonoBehaviour
 {
     public int Damage;
-    public GameObject Player;
+    public GameObject Target;
 
 
 
     void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.name == "Player")
+        if (other.gameObject.name == "Target")
         {
-            Player.GetComponent<Vida_Avion>().VidaAvionn -= Damage;
+            Target.GetComponent<Vida_Avion>().VidaAvionn -= Damage;
             Destroy(gameObject);
 
         }

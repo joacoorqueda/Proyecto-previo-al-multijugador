@@ -16,7 +16,7 @@ public class Shot : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKey(KeyCode.Mouse0))
         {
             if (Time.time > shotRateTime)
             {
