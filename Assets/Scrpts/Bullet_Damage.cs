@@ -5,20 +5,24 @@ using UnityEngine;
 public class Bullet_Damage : MonoBehaviour
 {
     public int Damage;
+    public int speed;
+    public float lifeTime;
     public GameObject Target;
-
-
-
-    void OnCollisionEnter(Collision other)
+    void Awake()
     {
-        if (other.gameObject.name == "Target")
-        {
-            Target.GetComponent<Vida_Avion>().VidaAvionn -= Damage;
-            Destroy(gameObject);
-
-        }
-
-
+        Destroy(gameObject, lifeTime);
     }
-
+    void Update()
+    {
+        transform.position += transform.forward * speed * Time.deltaTime;
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        var V = other.GetComponent<Vida_Avion>();
+        if(V)
+        {
+            V.VidaAvionn -= Damage;
+            Destroy(gameObject);
+        }
+    }
 }

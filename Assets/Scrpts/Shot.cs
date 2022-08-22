@@ -8,8 +8,6 @@ public class Shot : MonoBehaviour
 
     public Transform spawnPoint;
 
-    public float shotForce = 1500;
-
     public float shotRate = 0.5f;
 
     private float shotRateTime = 0;
@@ -22,7 +20,7 @@ public class Shot : MonoBehaviour
             {
                 GameObject newBullet;
                 newBullet = Instantiate(bullet, spawnPoint.position, spawnPoint.rotation);
-                newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * shotForce);
+                //newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * shotForce);
                 shotRateTime = Time.time + shotRate;
 
             }
