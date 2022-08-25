@@ -21,8 +21,8 @@ public class Playersiguecam : MonoBehaviour
     {
         // transform.position = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 5));
 
-        if (Input.GetMouseButton(1))
-        {
+        //if (Input.GetMouseButton(1))
+        //{
 
         
         ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -43,4 +43,4 @@ public class Playersiguecam : MonoBehaviour
 
     }
 }
-}
+//}

@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Aumentotamaño : MonoBehaviour
+public class Inventar : MonoBehaviour
 {
+
+    public int tamaño = 0;
     // Start is called before the first frame update
     void Start()
     {
