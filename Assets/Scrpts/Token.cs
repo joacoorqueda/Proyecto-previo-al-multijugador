@@ -11,6 +11,8 @@ public class Token : MonoBehaviour
     void Start()
     {
         tamanio = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventar>();
+
+       
     }
 
     // Update is called once per frame
@@ -26,7 +28,7 @@ public class Token : MonoBehaviour
             tamanio.tamaño = tamanio.tamaño + 1;
             Destroy(gameObject);
             
-
+           
         }
 
 
