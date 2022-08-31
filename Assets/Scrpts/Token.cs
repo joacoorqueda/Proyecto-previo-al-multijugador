@@ -6,7 +6,7 @@ public class Token : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    Inventar tamanio;
+   public int tamanio;
 
     void Start()
     {
