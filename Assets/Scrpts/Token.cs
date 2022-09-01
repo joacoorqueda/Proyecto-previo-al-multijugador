@@ -6,15 +6,14 @@ public class Token : MonoBehaviour
 {
     // Start is called before the first frame update
 
-   public int tamanio;
+    Inventar tamanio;
 
     void Start()
     {
         tamanio = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventar>();
-   
-    }
 
-    // Update is called once per frame
+    } 
+
     void Update()
     {
         

@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class AumentoTamaño : MonoBehaviour
 {
-    Inventar planelife;
+    Vida_Avion planelife;
     // Start is called before the first frame update
     void Start()
     {
 
-        planelife = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventar>();
+        planelife = GameObject.FindGameObjectWithTag("Player").GetComponent<Vida_Avion>();
         
         
         //transform.localScale = new Vector3(x: 1f, y: 1f, z: 1f);
@@ -26,17 +26,12 @@ public class AumentoTamaño : MonoBehaviour
         if (collision.gameObject.CompareTag("Token"))
         {
             
-         transform.localScale += new Vector3(x:0.1f, y: 0f, z: 0.1f);
+         transform.localScale += new Vector3(x:0.05f, y: 0f, z: 0.05f);
 
 
-            tamanio.tamaño = tamanio.tamaño + 1;
-            //Vida_Avion += 1;
+            planelife.VidaAvionn = planelife.VidaAvionn + 1;
 
             //quiero que cuando dispares te haga un poco mas chico
-
-
         }
-
-
     }
 }

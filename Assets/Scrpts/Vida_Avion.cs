@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Vida_Avion : MonoBehaviour
 {
-    public int VidaAvionn;
+    public int VidaAvionn = 0;
 
     private void Update()
     {
