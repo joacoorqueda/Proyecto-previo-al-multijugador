@@ -2187,6 +2187,7 @@ MonoBehaviour:
   bullet: {fileID: 3162012927550215425, guid: 1d50e338d1b1f584c9eb006921c61c4d, type: 3}
   spawnPoint: {fileID: 559328369}
   shotRate: 0.2
+  VidaAvionn: 100
 --- !u!114 &1187219124
 MonoBehaviour:
   m_ObjectHideFlags: 0
