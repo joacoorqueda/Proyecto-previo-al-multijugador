@@ -12,18 +12,41 @@ public class Shot : MonoBehaviour
 
     private float shotRateTime = 0;
 
-    void Update()
-    {
-        if (Input.GetKey(KeyCode.Mouse0))
-        {
-            if (Time.time > shotRateTime)
-            {
-                GameObject newBullet;
-                newBullet = Instantiate(bullet, spawnPoint.position, spawnPoint.rotation);
-                //newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * shotForce);
-                shotRateTime = Time.time + shotRate;
+    Vida_Avion planelife;
 
+    Inventar tamanio;
+
+    
+    
+   void Update()
+    {
+
+       planelife = GameObject.FindGameObjectWithTag("Player").GetComponent<Vida_Avion>();
+
+        tamanio = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventar>();
+
+
+            if (Input.GetKey(KeyCode.Mouse0))
+            {
+
+           if (Time.time > shotRateTime)
+                {
+                    GameObject newBullet;
+                    newBullet = Instantiate(bullet, spawnPoint.position, spawnPoint.rotation);
+                    //newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * shotForce);
+                    shotRateTime = Time.time + shotRate;
+
+            transform.localScale -= new Vector3(x: 0.009f, y: 0f, z: 0.009f);
+
+            planelife.VidaAvionn = planelife.VidaAvionn - 1;
+
+            tamanio.tamaño = tamanio.tamaño - 1;
+
+                }
+
+
+            
             }
         }
     }
-}
+
