@@ -2049,7 +2049,6 @@ GameObject:
   - component: {fileID: 1187219119}
   - component: {fileID: 1187219118}
   - component: {fileID: 1187219116}
-  - component: {fileID: 1187219122}
   - component: {fileID: 1187219123}
   - component: {fileID: 1187219117}
   - component: {fileID: 1187219124}
@@ -2159,19 +2158,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55afde318f0715044a872633f421e96e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1187219122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1187219115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd7e049ab8d27de42be18ab03b036a51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  VidaAvionn: 100
 --- !u!114 &1187219123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2187,7 +2173,7 @@ MonoBehaviour:
   bullet: {fileID: 3162012927550215425, guid: 1d50e338d1b1f584c9eb006921c61c4d, type: 3}
   spawnPoint: {fileID: 559328369}
   shotRate: 0.2
-  VidaAvionn: 100
+  VidaAvioneta: 100
 --- !u!114 &1187219124
 MonoBehaviour:
   m_ObjectHideFlags: 0

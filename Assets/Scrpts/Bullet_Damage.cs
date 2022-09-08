@@ -18,10 +18,10 @@ public class Bullet_Damage : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        var V = other.GetComponent<Vida_Avion>();
+        var V = other.GetComponent<Shot>();
         if(V)
         {
-            V.VidaAvionn -= Damage;
+            V.VidaAvioneta -= Damage;
             Destroy(gameObject);
         }
     }

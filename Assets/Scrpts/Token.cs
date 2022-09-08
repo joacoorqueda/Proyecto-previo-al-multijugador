@@ -25,6 +25,7 @@ public class Token : MonoBehaviour
         {
             tamanio.tamaño = tamanio.tamaño + 1;
             Destroy(gameObject);
+            transform.localScale += new Vector3(x: 0.02f, y: 0f, z: 0.02f);
 
         }
 
