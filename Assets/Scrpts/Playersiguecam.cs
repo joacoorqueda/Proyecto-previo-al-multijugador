@@ -12,7 +12,7 @@ public class Playersiguecam : MonoBehaviour
 
     void Start()
     {
-        cam = GameObject.Find("Main Camera").GetComponent<Camera>();
+        cam = Camera.main;
         planecollider = GameObject.Find("Plane").GetComponent<Collider>();
     }
 
