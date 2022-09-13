@@ -7,7 +7,7 @@ public class Bullet_Damage : MonoBehaviour
     public int Damage;
     public int speed;
     public float lifeTime;
-    public GameObject Target;
+    
     void Awake()
     {
         Destroy(gameObject, lifeTime);
@@ -23,6 +23,8 @@ public class Bullet_Damage : MonoBehaviour
         {
             V.VidaAvioneta -= Damage;
             Destroy(gameObject);
+
+            
         }
     }
 }

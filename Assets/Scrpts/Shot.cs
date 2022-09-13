@@ -32,11 +32,11 @@ public class Shot : MonoBehaviour
 
 
         if (VidaAvioneta > 100 && Input.GetKey(KeyCode.Mouse0))
-        {
+            {
 
 
 
-           if (Time.time > shotRateTime)
+            if (Time.time > shotRateTime)
                 {
                     GameObject newBullet;
                     newBullet = Instantiate(bullet, spawnPoint.position, spawnPoint.rotation);
