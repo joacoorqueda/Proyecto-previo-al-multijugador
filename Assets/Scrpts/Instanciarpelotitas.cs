@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Instanciarpelotitas : MonoBehaviour
 {
-    public GameObject TokenP;
+    public GameObject Tokenp;
 
-    private float rangoGeneracion = 9.0f;
+    private float rangoGeneracion = 3.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +18,7 @@ public class Instanciarpelotitas : MonoBehaviour
 
         Vector3 posAleatoria = new Vector3(posXGeneracion, 1, posZGeneracion);
 
-        Instantiate(TokenP, posAleatoria, TokenP.transform.rotation);
+        Instantiate(Tokenp, posAleatoria, Tokenp.transform.rotation);
     }
 
     // Update is called once per frame

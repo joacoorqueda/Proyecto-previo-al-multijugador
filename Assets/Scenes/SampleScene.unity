@@ -992,6 +992,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114468985679530038, guid: f57cfc5a4db52e649bc494616203e0f3,
+        type: 3}
+      propertyPath: Token
+      value: 
+      objectReference: {fileID: 8494393100898531173, guid: f57cfc5a4db52e649bc494616203e0f3,
+        type: 3}
+    - target: {fileID: 114468985679530038, guid: f57cfc5a4db52e649bc494616203e0f3,
+        type: 3}
+      propertyPath: Tokenp
+      value: 
+      objectReference: {fileID: 2109966597}
     - target: {fileID: 8494393100735758757, guid: f57cfc5a4db52e649bc494616203e0f3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1237,3 +1248,9 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947241752}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2109966597 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8494393100898531173, guid: f57cfc5a4db52e649bc494616203e0f3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1603699428}
+  m_PrefabAsset: {fileID: 0}
