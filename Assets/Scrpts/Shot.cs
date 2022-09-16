@@ -43,7 +43,7 @@ public class Shot : MonoBehaviour
                     //newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * shotForce);
                     shotRateTime = Time.time + shotRate;
 
-                    transform.localScale -= new Vector3(x: 0.009f, y: 0f, z: 0.009f);
+                    transform.localScale -= new Vector3(x: 0.05f, y: 0f, z: 0.05f);
 
                     planelife.VidaAvioneta = planelife.VidaAvioneta - 1;
 
