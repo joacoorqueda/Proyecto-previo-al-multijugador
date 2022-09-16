@@ -20,7 +20,7 @@ public class Instanciarpelotitas : MonoBehaviour
 
 
 
-        Instantiate(Tokenp, posAleatoria, Tokenp.transform.rotation);
+        Instantiate(Tokenp , posAleatoria, Tokenp.transform.rotation);
     }
 
     // Update is called once per frame
