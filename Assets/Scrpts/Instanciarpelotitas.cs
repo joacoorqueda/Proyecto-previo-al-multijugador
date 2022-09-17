@@ -8,8 +8,9 @@ public class Instanciarpelotitas : MonoBehaviour
 
     public GameObject Tokenp;
 
- 
-    private float rangoGeneracion = 9.0f;
+    int I;
+
+    private float rangoGeneracion = 400f;
 
     // Start is called before the first frame update
     void Start()
@@ -23,11 +24,11 @@ public class Instanciarpelotitas : MonoBehaviour
 
 
 
+       
 
-
-        for (int I = 0; I < 100; I++)
+        for (InventarioPelotitas = 0; I < 150; I++)
         {
-            Instantiate(Tokenp, posinstanciacion, Tokenp.transform.rotation);
+             Instantiate(Tokenp, posinstanciacion, Tokenp.transform.rotation);
 
             InventarioPelotitas++;
         }
