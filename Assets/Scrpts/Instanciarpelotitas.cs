@@ -20,18 +20,20 @@ public class Instanciarpelotitas : MonoBehaviour
 
         float posZGeneracion = Random.Range(-rangoGeneracion, rangoGeneracion);
 
-        Vector3 posinstanciacion = new Vector3(posXGeneracion , 0.82f , posZGeneracion );
+        Vector3 posinstanciacion = new Vector3(posXGeneracion , 0.82f , posZGeneracion);
 
 
 
        
 
-        for (InventarioPelotitas = 0; I < 200; I++)
+        for (I = 0; I < 200; I++)
         {
-             Instantiate(Tokenp, posinstanciacion, Tokenp.transform.rotation);
-
-            posXGeneracion++;
+             
+            posXGeneracion += 5f;
+            posZGeneracion += 5f;
             InventarioPelotitas++;
+
+            Instantiate(Tokenp, posinstanciacion, Tokenp.transform.rotation);
         }
     }
 
