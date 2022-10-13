@@ -10,6 +10,7 @@ public class Instanciarpelotitas : MonoBehaviour
 
     int I;
 
+
     private float rangoGeneracion = 6f/*400f*/;
 
     // Start is called before the first frame update
@@ -20,20 +21,24 @@ public class Instanciarpelotitas : MonoBehaviour
 
         float posZGeneracion = Random.Range(-rangoGeneracion, rangoGeneracion);
 
-        Vector3 posinstanciacion = new Vector3(posXGeneracion , 0.82f , posZGeneracion);
+        Vector3 posinstanciacion = new Vector3(posXGeneracion ++ , 0.82f , posZGeneracion++);
 
 
 
        
 
-        for (I = 0; I < 200; I++)
+            //posXGeneracion += 5.0f;
+
+            //posZGeneracion += 5.0f;
+
+
+
+        for (I = 0; I < 100; I++)
         {
-             
-            posXGeneracion += 5f;
-            posZGeneracion += 5f;
             InventarioPelotitas++;
 
             Instantiate(Tokenp, posinstanciacion, Tokenp.transform.rotation);
+
         }
     }
 
