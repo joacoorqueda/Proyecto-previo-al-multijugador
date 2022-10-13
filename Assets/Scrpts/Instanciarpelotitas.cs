@@ -17,19 +17,15 @@ public class Instanciarpelotitas : MonoBehaviour
     void Start()
     {
 
-        float posXGeneracion = 5.0f;       /*Random.Range(-rangoGeneracion, rangoGeneracion);*/
+        float posXGeneracion =Random.Range(-rangoGeneracion, rangoGeneracion);
 
-        float posZGeneracion = 5.0f;             /*Random.Range(-rangoGeneracion, rangoGeneracion);*/
+        float posZGeneracion =Random.Range(-rangoGeneracion, rangoGeneracion);
 
-        Vector3 posinstanciacion = new Vector3(posXGeneracion, 0.82f, posZGeneracion);
-
-
+        Vector3 posinstanciacion = new Vector3(1.0f, 0.82f, 1.0f);
 
 
 
-
-
-       for (I = 0; I < 100; I++)
+        for (I = 0; I < 100; I++)
             {
             posXGeneracion += 5.0f;
             posZGeneracion += 5.0f;
