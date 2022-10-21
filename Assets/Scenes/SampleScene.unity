@@ -678,6 +678,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InventarioPelotitas: 0
   Tokenp: {fileID: 8494393100898531173, guid: f57cfc5a4db52e649bc494616203e0f3, type: 3}
+  rangoGeneracion: 410
+  cantidadAGenerar: 1200
 --- !u!114 &1187219123
 MonoBehaviour:
   m_ObjectHideFlags: 0
