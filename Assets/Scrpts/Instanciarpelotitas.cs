@@ -8,8 +8,8 @@ public class Instanciarpelotitas : MonoBehaviour
 
     public GameObject Tokenp;
 
-    int I;
 
+    int I;
 
     private float rangoGeneracion = 6f/*400f*/;
 
@@ -21,18 +21,18 @@ public class Instanciarpelotitas : MonoBehaviour
 
         float posZGeneracion =Random.Range(-rangoGeneracion, rangoGeneracion);
 
-        Vector3 posinstanciacion = new Vector3(1.0f, 0.82f, 1.0f);
+        Vector3 posinstanciacion = new Vector3(posXGeneracion, 0.82f, posZGeneracion);
+
+        
 
 
 
-        for (I = 0; I < 100; I++)
+        for (I = 0 ; I < 100; I++/*, posXGeneracion += 5.0f, posZGeneracion+= 5.0f*/)
             {
-            posXGeneracion += 5.0f;
-            posZGeneracion += 5.0f;
 
-            InventarioPelotitas++;
-
-                Instantiate(Tokenp, posinstanciacion, Tokenp.transform.rotation);
+            //posZGeneracion += 5.0f;
+            //posXGeneracion += 5.0f;
+            Instantiate(Tokenp, posinstanciacion, Tokenp.transform.rotation);
 
             }
      }
