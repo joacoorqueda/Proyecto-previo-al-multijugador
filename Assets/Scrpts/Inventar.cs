@@ -6,6 +6,8 @@ public class Inventar : MonoBehaviour
 {
 
     public int tamaño = 0;
+
+    public int InventarioPelotitas;
     // Start is called before the first frame update
     void Start()
     {

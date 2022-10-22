@@ -676,10 +676,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb9d01729d5f9374b8c4d435692049a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventarioPelotitas: 0
   Tokenp: {fileID: 8494393100898531173, guid: f57cfc5a4db52e649bc494616203e0f3, type: 3}
   rangoGeneracion: 210
-  cantidadAGenerar: 1200
+  cantidadAGenerar: 2000
 --- !u!114 &1187219123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -709,6 +708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "tama\xF1o": 0
+  InventarioPelotitas: 0
 --- !u!224 &1187219125
 RectTransform:
   m_ObjectHideFlags: 0

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Instanciarpelotitas : MonoBehaviour
 {
-    public int InventarioPelotitas;
+   
 
     public GameObject Tokenp;
 
