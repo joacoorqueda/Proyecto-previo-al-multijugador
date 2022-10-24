@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Photon;
+using Photon.Pun;
+using Photon.Realtime;
 using UnityEngine;
 
 
@@ -14,7 +15,7 @@ public class Playersiguecam : MonoBehaviour
 
     void Start()
     {
-        if(photonView.IsMine == true)
+        if(photonNetwork.IsMine == true)
         {
             cam = Camera.main;
             cam.GetComponent<CameraPlayerFollow>().player = transform;

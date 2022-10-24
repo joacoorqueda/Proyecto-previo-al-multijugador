@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon;
 
 public class Shot : MonoBehaviour
 {
@@ -39,7 +40,7 @@ public class Shot : MonoBehaviour
             if (Time.time > shotRateTime)
                 {
                     GameObject newBullet;
-                    newBullet = Instantiate(bullet, spawnPoint.position, spawnPoint.rotation);
+                    newBullet = photon.Instantiate(bullet, spawnPoint.position, spawnPoint.rotation);
                     //newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * shotForce);
                     shotRateTime = Time.time + shotRate;
 
