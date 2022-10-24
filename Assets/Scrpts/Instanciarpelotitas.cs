@@ -1,13 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Instanciarpelotitas : MonoBehaviour
 {
-   
+    
+    
 
     public GameObject Tokenp;
+   
+   TextMeshProUGUI PlayerSize;
 
+   
 
     int I;
 
@@ -15,7 +20,11 @@ public class Instanciarpelotitas : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
+
     {
+       
+
+
         for (I = 0 ; I < cantidadAGenerar; I++)
         {
             float posXGeneracion =Random.Range(-rangoGeneracion, rangoGeneracion);
@@ -24,6 +33,8 @@ public class Instanciarpelotitas : MonoBehaviour
             
             Instantiate(Tokenp, posinstanciacion, Tokenp.transform.rotation);
         }
+
+        PlayerSize.text = ;
     }
     
 

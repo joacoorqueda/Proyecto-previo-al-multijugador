@@ -1,17 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Token : MonoBehaviour
 {
     // Start is called before the first frame update
 
     Inventar tamanio;
-    
+    TextMeshProUGUI PlayerSize;
 
     void Start()
     {
         tamanio = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventar>();
+
+        PlayerSize.text = Inventar.tamaño;
 
     } 
 
