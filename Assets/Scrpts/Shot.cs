@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Photon;
+using Photon.Pun;
 
 public class Shot : MonoBehaviour
 {
@@ -38,13 +38,13 @@ public class Shot : MonoBehaviour
 
 
             if (Time.time > shotRateTime)
-                {
-                    GameObject newBullet;
-                    newBullet = photon.Instantiate(bullet, spawnPoint.position, spawnPoint.rotation);
-                    //newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * shotForce);
+            {
+                GameObject newBullet;
+                newBullet = PhotonNetwork.Instantiate("bullet", spawnPoint.position, spawnPoint.rotation);
                     shotRateTime = Time.time + shotRate;
 
                     transform.localScale -= new Vector3(x: 0.05f, y: 0f, z: 0.05f);
+               
 
                     planelife.VidaAvioneta = planelife.VidaAvioneta - 1;
 

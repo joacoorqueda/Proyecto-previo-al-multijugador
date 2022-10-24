@@ -28,6 +28,11 @@ namespace Photon.Pun
     {
         private static HashSet<byte> allowedReceivingGroups = new HashSet<byte>();
 
+        public static GameObject Instantiate(GameObject bullet, Vector3 position, Quaternion rotation)
+        {
+            throw new NotImplementedException();
+        }
+
         private static HashSet<byte> blockedSendingGroups = new HashSet<byte>();
 
         private static HashSet<PhotonView> reusablePVHashset = new HashSet<PhotonView>();

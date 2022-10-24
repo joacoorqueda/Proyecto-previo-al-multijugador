@@ -1,11 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Photon.Pun;
-using Photon.Realtime;
 using UnityEngine;
 
 
-public class Playersiguecam : MonoBehaviour
+public class Playersiguecam : MonoBehaviourPunCallbacks
 {
     Camera cam;
     Collider planecollider;
@@ -15,13 +14,13 @@ public class Playersiguecam : MonoBehaviour
 
     void Start()
     {
-        if(photonNetwork.IsMine == true)
+        if (photonView.IsMine == true)
         {
             cam = Camera.main;
             cam.GetComponent<CameraPlayerFollow>().player = transform;
             planecollider = GameObject.Find("Plane").GetComponent<Collider>();
         }
-    
+        
 
     }
 
