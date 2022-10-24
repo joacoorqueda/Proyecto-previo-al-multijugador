@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Photon;
 using UnityEngine;
+
 
 public class Playersiguecam : MonoBehaviour
 {
@@ -12,9 +14,14 @@ public class Playersiguecam : MonoBehaviour
 
     void Start()
     {
-        cam = Camera.main;
-        cam.GetComponent<CameraPlayerFollow>().player = transform;
-        planecollider = GameObject.Find("Plane").GetComponent<Collider>();
+        if(photonView.IsMine == true)
+        {
+            cam = Camera.main;
+            cam.GetComponent<CameraPlayerFollow>().player = transform;
+            planecollider = GameObject.Find("Plane").GetComponent<Collider>();
+        }
+    
+
     }
 
 
