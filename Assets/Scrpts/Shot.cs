@@ -15,6 +15,7 @@ public class Shot : MonoBehaviour
     Shot planelife;
 
     Inventar tamanio;
+    
 
     public int VidaAvioneta = 0;
 
@@ -49,7 +50,9 @@ public class Shot : MonoBehaviour
 
                     tamanio.tamaño = tamanio.tamaño - 1;
 
-                }
+               
+
+            }
 
 
 
