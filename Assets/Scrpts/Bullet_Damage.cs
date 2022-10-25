@@ -21,6 +21,7 @@ public class Bullet_Damage : MonoBehaviour
         var V = other.GetComponent<Shot>();
         if(V)
         {
+            Debug.Log(other.gameObject.name);
             V.VidaAvioneta -= Damage;
             Destroy(gameObject);
 
