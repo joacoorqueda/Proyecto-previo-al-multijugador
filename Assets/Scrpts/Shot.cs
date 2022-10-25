@@ -33,29 +33,29 @@ public class Shot : MonoBehaviour
 
 
         if (VidaAvioneta > 100 && Input.GetKey(KeyCode.Mouse0))
-            {
+        {
 
 
 
             if (Time.time > shotRateTime)
             {
                 GameObject newBullet;
-                newBullet = PhotonNetwork.Instantiate("bullet", spawnPoint.position, spawnPoint.rotation);
-                    shotRateTime = Time.time + shotRate;
+                newBullet = PhotonNetwork.Instantiate(bullet.name, spawnPoint.position, spawnPoint.rotation);
+                shotRateTime = Time.time + shotRate;
 
-                    transform.localScale -= new Vector3(x: 0.05f, y: 0f, z: 0.05f);
+                transform.localScale -= new Vector3(x: 0.05f, y: 0f, z: 0.05f);
                
 
-                    planelife.VidaAvioneta = planelife.VidaAvioneta - 1;
+                planelife.VidaAvioneta = planelife.VidaAvioneta - 1;
 
-                    tamanio.tamaño = tamanio.tamaño - 1;
-
-                }
-
-
+                tamanio.tamaño -= 1;
 
             }
+
+
+
         }
     }
+}
 
 
