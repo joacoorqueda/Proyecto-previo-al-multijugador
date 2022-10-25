@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class Instanciarpelotitas : MonoBehaviour
 {
@@ -21,8 +22,7 @@ public class Instanciarpelotitas : MonoBehaviour
             float posXGeneracion =Random.Range(-rangoGeneracion, rangoGeneracion);
             float posZGeneracion =Random.Range(-rangoGeneracion, rangoGeneracion);
             Vector3 posinstanciacion = new Vector3(posXGeneracion, 0.82f, posZGeneracion);
-            
-            Instantiate(Tokenp, posinstanciacion, Tokenp.transform.rotation);
+            PhotonNetwork.Instantiate(Tokenp.name, posinstanciacion, Tokenp.transform.rotation);
         }
     }
     

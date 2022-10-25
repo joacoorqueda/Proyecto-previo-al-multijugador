@@ -18,7 +18,7 @@ public class Playersiguecam : MonoBehaviourPunCallbacks
         {
             cam = Camera.main;
             cam.GetComponent<CameraPlayerFollow>().player = transform;
-            planecollider = GameObject.Find("Plane").GetComponent<Collider>();
+            //planecollider = GameObject.Find("Plane").GetComponent<Collider>();
         }
         
 
