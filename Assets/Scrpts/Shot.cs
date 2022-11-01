@@ -24,6 +24,7 @@ public class Shot : MonoBehaviour
         if (VidaAvioneta <= 0)
         {
             Destroy(gameObject);
+            PhotonNetwork.LoadLevel("Lobby");
 
         }
 
