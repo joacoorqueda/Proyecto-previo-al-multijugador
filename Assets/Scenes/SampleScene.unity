@@ -860,10 +860,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2089323501590668930, guid: 4b2d36e4a823407448d05d0261ce2927,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2089323501590668932, guid: 4b2d36e4a823407448d05d0261ce2927,
         type: 3}
       propertyPath: m_Name
       value: Plane
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089323501590668932, guid: 4b2d36e4a823407448d05d0261ce2927,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2089323501590668954, guid: 4b2d36e4a823407448d05d0261ce2927,
         type: 3}
@@ -968,6 +978,21 @@ PrefabInstance:
     - target: {fileID: 2089323501590668954, guid: 4b2d36e4a823407448d05d0261ce2927,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089323501590668955, guid: 4b2d36e4a823407448d05d0261ce2927,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089323501590668957, guid: 4b2d36e4a823407448d05d0261ce2927,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089323501590668958, guid: 4b2d36e4a823407448d05d0261ce2927,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5363762047536916051, guid: 4b2d36e4a823407448d05d0261ce2927,
