@@ -12,6 +12,6 @@ public class ButtonContinue : MonoBehaviour
 
     public void CambiarEscena()
     {
-        PhotonNetwork.LoadLevel("SampleScene");
+        PhotonNetwork.LoadLevel("Game");
     }
 }
