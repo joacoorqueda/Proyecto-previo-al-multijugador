@@ -10,6 +10,7 @@ public class GestorPhoton : MonoBehaviourPunCallbacks
     void Start()
     {
         PhotonNetwork.ConnectUsingSettings();
+        PhotonNetwork.Instantiate("Plane", new Vector3(Random.Range(-7, 7), 12, 0), Quaternion.identity);
     }
 
     // Update is called once per frame
@@ -27,9 +28,6 @@ public class GestorPhoton : MonoBehaviourPunCallbacks
     }
     public override void OnJoinedRoom()
     {
-        PhotonNetwork.Instantiate("Plane", new Vector3(Random.Range(-7, 7), 12, 0), Quaternion.identity);
-
+        Debug.Log("llego");
     }
-
-
 }
